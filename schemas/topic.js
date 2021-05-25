@@ -13,6 +13,12 @@ export default {
       title: 'Name',
       type: 'string',
       description:  'Topic Name'
+    },
+    {
+      name: 'description',
+      title: 'Description',
+      type: 'string',
+      description:  'Topic Description'
     }
   ]
 }

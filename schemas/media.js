@@ -9,10 +9,10 @@ export default {
   icon: () => <FontAwesomeIcon icon={faCompactDisc} />,
   fields: [
     {
-      name: 'type',
-      title: 'Type',
+      name: 'name',
+      title: 'Name',
       type: 'string',
-      description:  'Media Type'
+      description:  'Media Name'
     },
     {
       name: 'icon',
