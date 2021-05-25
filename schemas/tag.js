@@ -12,7 +12,7 @@ export default {
       name: 'name',
       title: 'Name',
       type: 'string',
-      description:  'Tag Name'
+      description:  'Topic Name'
     }
   ]
 }
