@@ -19,6 +19,16 @@ export default {
       title: 'Description',
       type: 'string',
       description:  'Topic Description'
-    }
+    },
+    {
+      name: 'isFeatured',
+      title: 'Is the topic featured?',
+      description:  'If checked the topic will show in the featured section',
+      type: 'boolean',
+      initialValue: false,
+      options: {
+        layout: 'checkbox',
+      },
+    },
   ]
 }
