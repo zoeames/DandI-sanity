@@ -9,7 +9,9 @@
   "scripts": {
     "start": "sanity start",
     "build": "sanity build",
-    "deploy": "sanity deploy"
+    "deploy": "sanity deploy",
+    "backup": "mkdir backups && curl https://o82uliuy.api.sanity.io/v1/data/export/production/ > ./backups/production-backup.ndjson",
+    "importDev": "sanity dataset import ./backups/production-backup.ndjson development"
   },
   "keywords": [
     "sanity"
