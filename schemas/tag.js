@@ -12,7 +12,23 @@ export default {
       name: 'name',
       title: 'Name',
       type: 'string',
-      description:  'Topic Name'
-    }
+      description:  'Tag Name'
+    },
+    {
+      name: 'description',
+      title: 'Description',
+      type: 'string',
+      description:  'Tag Description'
+    },
+    {
+      name: 'isFeatured',
+      title: 'Is the tag featured?',
+      description:  'If checked the tag will show in the featured section',
+      type: 'boolean',
+      initialValue: false,
+      options: {
+        layout: 'checkbox',
+      },
+    },
   ]
 }
