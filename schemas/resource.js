@@ -77,9 +77,13 @@ export default {
       isActive: 'isActive',
     },
     prepare: ({ title, isActive }) => {
+      const library = 'fas';
+      const iconName = isActive ? 'check' : 'times';
+      const color = isActive ? 'green' : 'red';
       return {
         title,
         subtitle: `Active: ${isActive ? 'Yes' : 'No'}`,
+        media: <FontAwesomeIcon style={{color: color}} icon={[library, iconName]} />,
       };
     },
   },
