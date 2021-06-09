@@ -36,5 +36,20 @@ export default {
         layout: 'checkbox',
       },
     },
-  ]
+  ],
+  preview: {
+    select: {
+      title: 'name',
+      isFeatured: 'isFeatured',
+    },
+    prepare: ({ title, isFeatured }) => {
+      const library = 'fas';
+      const iconName = isFeatured ? 'star' : 'times';
+      const color = isFeatured ? 'black' : 'white';
+      return {
+        title,
+        media: <FontAwesomeIcon style={{color: color}} icon={[library, iconName]} />,
+      };
+    },
+  },
 }
