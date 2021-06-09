@@ -15,10 +15,16 @@ export default {
       description:  'Tag Name'
     },
     {
+      name: 'shortDescription',
+      title: 'Short Description',
+      type: 'string',
+      description:  'Short Description - appears on home page when tag is featured'
+    },
+    {
       name: 'description',
       title: 'Description',
       type: 'string',
-      description:  'Tag Description'
+      description:  'Long Description - appears on the glossary page'
     },
     {
       name: 'isFeatured',
